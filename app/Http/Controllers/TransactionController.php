@@ -109,6 +109,6 @@ class TransactionController extends Controller
     public function destroy(Transaction $transaction)
     {
         $transaction->delete();
-        return redirect()->route('transactions.index')->with('success', "Berhasil menghapus data transaksi {$transaction['tujuan']}");
+        return redirect()->route('transaction.index')->with('success', "Berhasil menghapus data transaksi {$transaction['tujuan']}");
     }
 }
